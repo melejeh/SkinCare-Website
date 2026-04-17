@@ -1,0 +1,161 @@
+<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PlanetMel Skin Co. — Skincare Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg:#fff7fb;
+      --fg:#222;
+      --muted:#616161;
+      --brand:#d94f91;
+      --brand-2:#a675f5;
+      --border:#f2d3e6;
+      --shadow:0 6px 20px rgba(0,0,0,.08);
+      --radius:16px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;padding:0;font-family:Poppins,sans-serif;background:var(--bg);color:var(--fg);line-height:1.6}
+    img{max-width:100%;display:block;border-radius:14px}
+
+    header{position:sticky;top:0;background:rgba(255,255,255,.8);backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
+    .wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+    .bar{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:700}
+    .logo{width:30px;height:30px;border-radius:10px;background:linear-gradient(135deg,var(--brand),var(--brand-2))}
+    nav ul{display:flex;list-style:none;gap:16px;padding:0;margin:0}
+    nav a{text-decoration:none;color:#444;font-weight:600}
+    nav a:hover{color:var(--brand)}
+
+    .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center;padding:60px 0}
+    .hero h1{font-size:clamp(28px,5vw,46px);margin:0 0 10px}
+    .hero p{color:var(--muted)}
+    .cta{display:flex;gap:12px;margin-top:16px}
+    .btn{padding:11px 18px;border-radius:999px;text-decoration:none;font-weight:600;border:1px solid var(--border);background:#fff;box-shadow:var(--shadow)}
+    .btn.primary{background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#fff;border:none}
+
+    section{padding:44px 0}
+    .tag{background:#ffe6f2;color:#a2386f;padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;margin-bottom:8px;display:inline-block}
+    .services{display:flex;gap:14px;flex-wrap:wrap}
+    .service{flex:1 1 240px;background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow)}
+
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .tile{background:#fff;border:1px solid var(--border);border-radius:14px;overflow:hidden;box-shadow:var(--shadow)}
+    .tile figcaption{padding:10px 12px;font-weight:600}
+
+    .quotes{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    blockquote{background:#fff;border:1px solid var(--border);border-radius:12px;padding:14px}
+    .who{color:var(--muted);font-size:14px}
+
+    form{background:#fff;border:1px solid var(--border);border-radius:14px;padding:18px;box-shadow:var(--shadow);max-width:720px}
+    label{display:block;font-weight:600;margin:8px 0 6px}
+    input,textarea{width:100%;padding:10px;border:1px solid #e5c5d8;border-radius:10px;font:inherit}
+
+    footer{padding:28px 0;text-align:center;color:#666;border-top:1px solid var(--border)}
+
+    @media(max-width:900px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr)}.quotes{grid-template-columns:1fr}}
+    @media(max-width:560px){.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap bar">
+      <div class="brand"><div class="logo" aria-hidden="true"></div> PlanetMel Skin Co.</div>
+      <nav>
+        <ul>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#collection">Collection</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="wrap hero" id="top">
+      <div>
+        <h1>Skincare that’s out of this world.</h1>
+        <p>PlanetMel is a modern skincare brand that blends science, simplicity, and self-care to create products that make healthy skin effortless. ✨ It’s where beauty meets balance — minimalist formulas, aesthetic design, and results that let your natural glow shine.</p>
+        <div class="cta">
+          <a class="btn primary" href="#gallery">See Gallery</a>
+        </div>
+      </div>
+      <aside>
+        <div class="grid">
+          <img src="serum.jpg" alt="Serum bottle on marble">
+          <img src="texture.jpg" alt="Cream texture swatch">
+          <img src="routine.jpg" alt="Minimal routine flatlay">
+          <img src="face mist.jpg" alt="Face mist product">
+        </div>
+      </aside>
+    </section>
+
+  
+    <section class="wrap" id="collection">
+      <span class="tag">The Collection</span>
+      <h2>Our Line</h2>
+      <div class="services">
+        <article class="service"><h3>Cleansers</h3><p>Everyday gentle cleansers for a fresh start.</p></article>
+        <article class="service"><h3>Treatments</h3><p>Targeted serums for glow, clarity, and balance.</p></article>
+        <article class="service"><h3>Moisturizers</h3><p>Lightweight hydration that locks in comfort.</p></article>
+        <article class="service"><h3>SPF</h3><p>Daily protection with a soft, satin finish.</p></article>
+      </div>
+    </section>
+
+    
+    <section class="wrap" id="gallery">
+      <span class="tag">Glow Gallery</span>
+      <div class="grid">
+        <figure class="tile"><img src="cleanser.jpg" alt="Cleanser bottle on stone"><figcaption>HydraClean Campaign</figcaption></figure>
+        <figure class="tile"><img src="toner.jpg" alt="Toner bottle with dew"><figcaption>Dew Toner Launch</figcaption></figure>
+        <figure class="tile"><img src="moisturizer.jpg" alt="Moisturizer in glass jar"><figcaption>Ceramide Cream</figcaption></figure>
+        <figure class="tile"><img src="spf.jpg" alt="SPF tube on satin"><figcaption>Daily SPF Web</figcaption></figure>
+        <figure class="tile"><img src="mask.jpg" alt="Sheet mask flat lay"><figcaption>Mask Night Series</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="wrap" id="products">
+      <span class="tag">Our Products</span>
+      <h2>Best Sellers</h2>
+      <div class="services">
+        <article class="service"><h3>HydraClean Gel</h3><p>Refreshing, non-stripping formula for all skin types.</p></article>
+        <article class="service"><h3>GlowBoost Serum</h3><p>Vitamin-enriched serum for radiant, even-toned skin.</p></article>
+        <article class="service"><h3>CloudCream Moisturizer</h3><p>Whipped hydration that melts into your skin.</p></article>
+      </div>
+    </section>
+
+   
+    <section class="wrap" id="community">
+      <span class="tag">Community Love</span>
+      <h2>Reviews</h2>
+      <div class="quotes">
+        <blockquote><p>“Clean layout and easy to navigate — love the product gallery.”</p><footer class="who">— Glow Atelier</footer></blockquote>
+        <blockquote><p>“Looks professional on desktop and phone. Great work.”</p><footer class="who">— Nova Skin Co.</footer></blockquote>
+      </div>
+    </section>
+
+    
+    <section class="wrap" id="contact">
+      <span class="tag">Let’s talk</span>
+      <h2>Contact</h2>
+      <form action="/submit" method="post">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Your name" required>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required>
+        <label for="msg">Message</label>
+        <textarea id="msg" name="message" placeholder="Tell us about your skin concerns..."></textarea>
+        <button class="btn primary" type="submit">Send</button>
+        <a class="btn" href="#top">Back to top</a>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© 2025 PlanetMel Skin Co.</div>
+  </footer>
+</body>
+</html>
