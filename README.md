@@ -1,10 +1,22 @@
-PlanetMel Skin Co.
-PlanetMel Skin Co. is a front-end e-commerce website built with HTML and CSS to showcase modern layout design, accessibility, and brand styling.  
-The project represents a skincare brand concept that combines beauty, creativity, and clean web development.
+# PlanetMel Skin Co. — Frontend Website
 
-What I Built
-- Structured a complete website using semantic HTML5
-- Designed adaptive page layouts with CSS Grid and Flexbox 
-- Styled navigation, forms, and product cards for a cohesive brand look  
-- Added accessibility features like labels and alt text for usability  
-- Created a responsive, mobile-friendly interface  
+A static frontend website for PlanetMel Skin Co., a modern skincare brand that blends science, simplicity, and self-care.
+
+## Live Site
+[melejeh.github.io/SkinCare-Website](https://melejeh.github.io/SkinCare-Website)
+
+## Features
+- Responsive product gallery
+- Collection showcase
+- Customer reviews section
+- Contact form
+
+## Tech Stack
+- HTML5
+- CSS3
+- JavaScript
+
+## Part of the PlanetMel Platform
+This is the static frontend. The full platform includes:
+- [PlanetMel Admin App](https://github.com/melejeh/Skincare-Admin-App) — JavaFX desktop app for managing products
+- [PlanetMel Web App](https://github.com/melejeh/Skincare-WebApp) — Vaadin web app for customers to place orders
